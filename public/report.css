@@ -1,0 +1,40 @@
+/* Yazdırılabilir / PDF rapor — her zaman açık renkli, A4 yatay */
+@page{size:A4 landscape;margin:12mm}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:"IBM Plex Sans","Segoe UI",Arial,sans-serif;font-size:13px;line-height:1.5;color:#14163a;background:#e9edf4;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+.bar-top{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:12px 16px;background:#fff;border-bottom:1px solid #dbe0eb;position:sticky;top:0}
+.bar-top .tip{color:#59607a;font-size:.85rem}
+.btn{border:0;background:#2a2a8e;color:#fff;border-radius:9px;padding:9px 18px;font:inherit;font-weight:600;cursor:pointer}
+.btn.ghost{background:none;border:1px solid #dbe0eb;color:#14163a;font-weight:500}
+.sheet{max-width:1100px;margin:16px auto;background:#fff;padding:0 28px 24px;border-top:8px solid #12994a}
+.loading{padding:40px;text-align:center;color:#59607a}
+.head{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0 14px;border-bottom:3px solid #2a2a8e;position:relative}
+.head img{height:54px;width:auto;display:block}
+.head h1{margin:0;font-family:"Barlow Semi Condensed","IBM Plex Sans",Arial,sans-serif;font-size:24px;line-height:1.2;color:#2a2a8e;text-align:right}
+.head .meta{text-align:right;color:#59607a;font-size:12px}
+.yel{display:flex;flex-direction:column;align-items:flex-end;gap:4px;margin:6px 0 0}
+.yel i{display:block;height:4px;background:#ffe500}
+.yel i:first-child{width:90px}.yel i:last-child{width:60px}
+.summary{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
+.summary div{border:1px solid #dbe0eb;border-radius:8px;padding:8px 14px;min-width:130px}
+.summary b{display:block;font-family:"Barlow Semi Condensed","IBM Plex Sans",Arial,sans-serif;font-size:24px;line-height:1.1}
+.summary span{color:#59607a;font-size:11.5px}
+.filters{color:#59607a;font-size:12px;margin:0 0 10px}
+table{border-collapse:collapse;width:100%}
+th,td{padding:7px 10px;text-align:left;border-bottom:1px solid #dbe0eb;vertical-align:top}
+th{background:#2a2a8e;color:#fff;font-weight:600;font-size:11.5px}
+tbody tr:nth-child(even){background:#f5f7fb}
+thead{display:table-header-group}
+tr{break-inside:avoid}
+td small{display:block;color:#59607a;font-size:11px}
+.st{font-weight:600}
+.st.ok{color:#0b7a3a}.st.old{color:#7a5900}.st.none{color:#59607a}
+.foot{margin-top:18px;color:#59607a;font-size:11px;border-top:1px solid #dbe0eb;padding-top:8px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.err{padding:30px;text-align:center;color:#b3261e}
+@media print{
+  body{background:#fff}
+  .no-print{display:none!important}
+  .sheet{margin:0;max-width:none;padding:0;border-top:0}
+}

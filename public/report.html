@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://unpkg.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://*.supabase.co; base-uri 'none'; form-action 'self'">
+  <title>İSG Onay Kayıtları Raporu · WOVATEK MÜHENDİSLİK</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="report.css">
+</head>
+<body>
+  <div class="bar-top no-print">
+    <button id="print" class="btn" type="button">Yazdır / PDF olarak kaydet</button>
+    <button id="close" class="btn ghost" type="button">Kapat</button>
+    <span class="tip">Açılan pencerede hedef olarak «PDF olarak kaydet» seçin.</span>
+  </div>
+  <main id="sheet" class="sheet"><p class="loading">Rapor hazırlanıyor…</p></main>
+  <script src="config.js"></script>
+  <script src="loader.js"></script>
+  <script src="data.js"></script>
+  <script src="report.js"></script>
+</body>
+</html>
